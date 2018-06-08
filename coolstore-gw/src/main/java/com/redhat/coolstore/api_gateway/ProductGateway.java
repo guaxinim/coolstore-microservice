@@ -86,7 +86,7 @@ public class ProductGateway extends RouteBuilder {
                     .end()
                 .setBody(simple("null"))
                 .removeHeaders("CamelHttp*")
-                .recipientList(simple("http4://{{env:CATALOG_ENDPOINT:catalog:8080}}/api/products")).end()
+                .recipientList(simple("http4://catalog:8080/api/products")).end()
                 .choice()
                     .when(body().isNull())
                         .log("2nd fallback")
