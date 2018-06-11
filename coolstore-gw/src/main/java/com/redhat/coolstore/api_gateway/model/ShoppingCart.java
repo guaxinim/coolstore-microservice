@@ -3,6 +3,7 @@ package com.redhat.coolstore.api_gateway.model;
 import java.util.ArrayList;
 import java.util.List;
 
+@com.fasterxml.jackson.annotation.JsonIgnoreProperties(ignoreUnknown = true)
 public class ShoppingCart  {
 
     public String cartId="";
