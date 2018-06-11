@@ -5,6 +5,7 @@ import java.util.List;
 
 public class ShoppingCart  {
 
+    private String cartId;
 
     public double cartItemTotal=0.0;
 
@@ -22,7 +23,18 @@ public class ShoppingCart  {
     public String toString() {
         return ("cart: total: " + cartTotal + " sci list: " + shoppingCartItemList);
     }
+	
+	public ShoppingCart(String cartId) {
+		this.cartId = cartId;
+	}
+	
+	public String getCartId() {
+		return cartId;
+	}
 
+	public void setCartId(String cartId) {
+		this.cartId = cartId;
+	}
 
 	public double getCartItemTotal() {
 		return cartItemTotal;
