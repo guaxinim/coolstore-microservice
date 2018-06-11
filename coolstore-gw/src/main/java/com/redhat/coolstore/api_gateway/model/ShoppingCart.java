@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ShoppingCart  {
 
-    private String cartId;
+    public String cartId="";
 
     public double cartItemTotal=0.0;
 
@@ -20,13 +20,9 @@ public class ShoppingCart  {
     public List<ShoppingCartItem> shoppingCartItemList = new ArrayList<ShoppingCartItem>();
     
 
-    public String toString() {
-        return ("cart: total: " + cartTotal + " sci list: " + shoppingCartItemList);
-    }
-	
-	public ShoppingCart(String cartId) {
-		this.cartId = cartId;
-	}
+        public String toString() {
+            return ("cart: total: " + cartTotal + " sci list: " + shoppingCartItemList);
+        }
 	
 	public String getCartId() {
 		return cartId;
